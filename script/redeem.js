@@ -13,7 +13,7 @@ export const redeem = async(childId) => {
     const renderIcons = async() => {
         const rewardsOfChild = await service.getRewards(childId);
         stickersCont.innerHTML = rewardsOfChild.map(log => 
-            `<div><span class="sticker-pic" style="background-image:url(../assets/stickers/${utils.getIcon(log.id)}.gif)"></span><span class="reward-title">${log.title}</span></div>`).join('');
+            `<div><span class="sticker-pic" style="background-image:url(./assets/stickers/${utils.getIcon(log.id)}.gif)"></span><span class="reward-title">${log.title}</span></div>`).join('');
     };
     
     // Show his/her redeem btn only when the corresponding child is logged in

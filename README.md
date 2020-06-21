@@ -1,5 +1,6 @@
 # kids-reward-application
 Kid Reward Application based on points system. Kids earn their points depending on their good or bad deeds and have a chance to redeem them for the award they choose. Parents have admin rights and can add kids, the standard lists of deeds they do daily and of rewards with points in the admin page. The three lists are not associated in admin page, but on frontend parent later can associate certain child with specific good or bad action. In that way kids can see the log of their deeds they accomplished so far in main log and also on profile page where he or she has a chance to redeem (when logged in) his points, which is the most interesting part of the application. When child redeems his/her deserved points, its reward's sticker also appears on his/her profile, appreciating kids for their good behaviour and inspiring them to continue doing good deeds. 
+Click [Demo](https://meerim1987.github.io/kids-reward-application/) to see the project in live. 
 
 **Technical features:**
  - App is Vanilla JS, HTML and CSS;
@@ -14,11 +15,11 @@ Kid Reward Application based on points system. Kids earn their points depending 
  Child when logged in, can view all pages except admin. Also child can redeem points on his/her profile based on his/her balance status. 
 
 **Credentials of some of kids for testing**
- Admin: login: 'admin', passwd: '1234';
- Kids: login: 'Bill', passwd: 'kid12';
-       login: 'Laetitia', passwd: 'kid7';
-       login: 'Sofia', passwd: 'kid3';
-       login: 'Tom', passwd: 'kid2';
+ Admin: login: 'admin', passwd: '1234';<br />
+ Kids: login: 'Bill', passwd: 'kid12';<br />
+       login: 'Laetitia', passwd: 'kid7';<br />
+       login: 'Sofia', passwd: 'kid3';<br />
+       login: 'Tom', passwd: 'kid2';<br />
 
         
 
