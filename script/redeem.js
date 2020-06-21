@@ -42,7 +42,7 @@ export const redeem = async(childId) => {
         const allRewards = await rewardModel.getAll();
         document.getElementById('redeem-list').innerHTML = allRewards.map(el => `<li data-id="${el.id}">
                                                                                     <div class="reward-cont">
-                                                                                        <span class="mini-icon"><img src="../assets/stickers/${utils.getIcon(el.id)}.gif"/></span>
+                                                                                        <span class="mini-icon"><img src="./assets/stickers/${utils.getIcon(el.id)}.gif"/></span>
                                                                                         <span class="reward-text">${el.rewards}</span>
                                                                                         <a href="javascript:" class="redeem-link text-muted">Redeem</a>
                                                                                     </div>
