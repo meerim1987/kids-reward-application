@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="header-col-wrap">
+      <div id="header-col"></div>
+    </div>
+    <div class="registration">
+      <div class="popup">
+        <form>
+          <div id="popup-content">
+            <div class="cloud">
+              <div class="field-info">
+                <input
+                  type="input"
+                  class="form__field data__field"
+                  placeholder="Name"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label required"
+                  >Login or name</label
+                >
+              </div>
+              <div class="field-info">
+                <input
+                  type="password"
+                  class="form__field data__field"
+                  placeholder="Password"
+                  id="password"
+                  required
+                />
+                <label for="pass" class="form__label required">Password</label>
+              </div>
+              <div class="submit-wrap">
+                <input
+                  class="button"
+                  type="submit"
+                  value="Sign in"
+                  role="button"
+                />
+                <div class="loader">
+                  <div class="check">
+                    <span class="check-one"></span>
+                    <span class="check-two"></span>
+                  </div>
+                </div>
+                <div class="msg-info msg-info-1">
+                  There is no such name or password
+                </div>
+                <div class="msg-info msg-info-2">
+                  Please input name and password
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="script/signIn.js"></script>
+  </body>
+</html>

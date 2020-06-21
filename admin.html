@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rewards admin</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+
+  <body>
+    <div class="body-wrap">
+      <div class="message-authoriz">Hey, you are not allowed to access this page</div>
+      <div class="admin-board col-1">
+        <div class="admin-link"><a href="./index.html">Main</a></div>
+        <div class="child-board app">
+          <div class="controlers">
+            <h3>Child Info</h3>
+            <div class="controlers-wrap">
+              <a href="javascript:" class="add-icon"></a>
+              <a href="javascript:" class="remove-icon"></a>
+            </div>
+          </div>
+          <form class="child-info">
+            <div class="content">
+              <div class="field-info">
+                <input
+                  type="input"
+                  class="form__field data__field"
+                  placeholder="Name"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label required"
+                  >Login or name</label
+                >
+              </div>
+              <div class="number-input"></div>
+              <div class="field-info">
+                <input
+                  type="input"
+                  class="form__field data__field"
+                  placeholder="Password"
+                  id="password"
+                  required
+                />
+                <label for="pass" class="form__label required">Password</label>
+              </div>
+              <div class="submit-wrap">
+                <input class="button" type="submit" value="Submit" />
+                <div class="loader">
+                  <div class="check">
+                    <span class="check-one"></span>
+                    <span class="check-two"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="achiev-board app">
+          <div class="controlers">
+            <h3>Achievements and fails</h3>
+            <div class="controlers-wrap">
+              <a href="javascript:" class="add-icon"></a>
+              <a href="javascript:" class="remove-icon"></a>
+            </div>
+          </div>
+          <form class="activities-cont">
+            <div class="content">
+              <div class="field-info">
+                <input
+                  type="input"
+                  class="form__field data__field"
+                  placeholder="Achievement/misdeed title"
+                  name="actionName"
+                  id="actionName"
+                  required
+                />
+                <label for="actionName" class="form__label required"
+                  >Your child's achivement or fail</label
+                >
+                <div class="text-muted">Max acceptable is 47 chars</div>
+              </div>
+              <div class="field-info checkbox">
+                <input type="checkbox" name="negative" id="negative" />
+                <label for="negative" class="form__label"
+                  >Only if misdeed</label
+                >
+              </div>
+              <div class="number-input"></div>
+              <div class="field-info">
+                <textarea
+                  id="actionDescr"
+                  cols="30"
+                  rows="3"
+                  class="form__field data__field"
+                  name="actionDesc"
+                ></textarea>
+                <label for="actionDescr" class="form__label">Description</label>
+              </div>
+              <div class="submit-wrap">
+                <input class="button" type="submit" value="Submit" />
+                <div class="loader">
+                  <div class="check">
+                    <span class="check-one"></span>
+                    <span class="check-two"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="rewards-board app">
+          <div class="controlers">
+            <h3>Rewards</h3>
+            <div class="controlers-wrap">
+              <a href="javascript:" class="add-icon"></a>
+              <a href="javascript:" class="remove-icon"></a>
+            </div>
+          </div>
+          <form class="rewards-cont">
+            <div class="content">
+              <div class="field-info">
+                <input
+                  type="input"
+                  class="form__field data__field"
+                  placeholder="Type rewards"
+                  name="rewards"
+                  id="rewards"
+                  required
+                />
+                <label for="action-name" class="form__label required"
+                  >Rewards</label>
+                <div class="text-muted">Max acceptable is 47 chars</div>
+              </div>
+              <div class="number-input"></div>
+              <div class="submit-wrap">
+                <input class="button" type="submit" value="Submit" />
+                <div class="loader">
+                  <div class="check">
+                    <span class="check-one"></span>
+                    <span class="check-two"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="table-wrap">
+          <div class="table-header">
+            <h5>Child Personal Information</h5>
+          </div>
+          <div class="child-list-cont"></div>
+          <div class="paginator"></div>
+          <div class="message">No kids info been yet added</div>
+        </div>
+        <div class="table-wrap">
+          <div class="table-header">
+            <h5>Actions</h5>
+          </div>
+          <div class="action-list-cont"></div>
+          <div class="paginator"></div>
+          <div class="message">No activities info been yet added</div>
+        </div>
+        <div class="table-wrap">
+          <div class="table-header">
+            <h5>Rewards</h5>
+          </div>
+          <div class="rewards-list-cont"></div>
+          <div class="paginator"></div>
+          <div class="message">No rewards info been yet added</div>
+        </div>
+      </div>
+    </div>
+    <div class="msg-wrapper-admin">
+    </div>
+    <script type="module" src="script/admin.js"></script>
+  </body>
+</html>

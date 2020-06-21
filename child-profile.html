@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child's profile</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body class="log profile-log">
+    <div class="popup reward-popup"> 
+        
+            <div id="popup-content">
+                <div class="cloud">
+                    <div class="child-select-wrapper select-wrapper">
+                        <ul id="redeem-list"></ul>
+                    </div>
+                    <a href="javascript:" class="close-icon"></a>
+                    <div class="msg-wrapper">
+                        <div class="message msg-redeem">You have just redeemed <span class="reward-name"></span> points</div>
+                        <div class="message msg-not-redeem">Not enough points to redeem!</div>
+                    </div>
+                    <div class="popup-balance">You have <span></span>points now</div>
+                </div>
+            </div>
+        
+    </div>
+    <div class="header-col-wrap">
+        <div id="header-col"></div>
+    </div>
+    <div class="activity-log">
+        <div class="activity-log-content card profile-box">
+            <h5 class="title">Profile Details</h5>
+            <div class="profile-details-wrap">
+                <div id="profile-image"></div>
+                <div id="profile-details">
+                    <span class="name"></span>
+                    <span class="age"></span>
+                </div>
+                <div class="balance-wrap"><span class="text-muted">Balance:</span><span id="balance"></span></div>
+                <div id="redeem-btn-wrap"></div>
+            </div>
+        <div class="stickers-wrap">
+        </div>
+        </div>
+        <div class="activity-log-content card">
+            <h5 class="title">Activities</h5>
+            <ul id="log">
+            </ul>
+            <div class="message message-log">There is no log activity added yet</div>
+            <div class="btn-wrap">
+                <input id="loadMore" type="button" class="button" value="Load more">
+            </div>
+        </div>
+    </div>
+<script type="module" src="script/profile.js"></script>
+</body>
+</html>

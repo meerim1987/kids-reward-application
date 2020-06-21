@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements Log</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body class="log">
+<div class="popup indexPage">
+    <div id="popup-content">
+        <div class="cloud">
+        <div class="child-select-wrapper select-wrapper">
+            <div class="child-select custom">
+                <div class="select-trigger"><span>Select child's name</span>
+                    <div class="arrow"></div>
+                </div>
+                <div class="child-options options">
+                </div>
+            </div>
+        </div>
+        <div class="activities-select-wrapper select-wrapper">
+            <div class="activities-select custom">
+                <div class="select-trigger"><span>Select child's deed</span>
+                    <div class="arrow"></div>
+                </div>
+                <div class="activ-options options">
+                </div>
+            </div>
+        </div>
+        <a href="javascript:" class="close-icon"></a>
+        <div class="submit-wrap">
+            <input class="button" type="submit" value="Add" />
+            <div class="loader">
+                <div class="check">
+                  <span class="check-one"></span>
+                  <span class="check-two"></span>
+                </div>
+            </div>
+            <div class="msg-info">You forgot to input info</div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="header-col-wrap">
+    <div id="header-col">
+    </div>
+</div>
+</div>
+<div class="activity-log">
+    <div class="activity-log-content card">
+        <h5 class="title">Activities</h5>
+        <div class="btn-wrap log-btn-wrap">
+            <input class="button button-log log-btn" type="submit" value="Log activity">
+        </div>
+        <ul id="log">
+        </ul>
+        <div class="btn-wrap">
+            <input id="loadMore" type="button" class="button" value="Load more">
+        </div>
+    </div>
+</div>
+<script type="module" src="script/index.js"></script>
+</body>
+</html>
