@@ -5,10 +5,6 @@ initDefaultData();
 
 // Base model for all data collections
 class Model {
-    static data;
-  
-    collectionName;
-  
     constructor(name) {
       this.collectionName = name;
     }
